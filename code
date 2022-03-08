@@ -1,0 +1,37 @@
+list=[]
+
+def itor(input):
+    while input != 0:
+        if input >= 1000:
+            list.append("M")
+            input-=1000
+        elif input >= 500:
+            list.append("D")
+            input-=500
+        elif input >= 100:
+            list.append("C")
+            input-=100
+        elif input >= 50:
+            list.append("L")
+            input-=50
+        elif input >= 10:
+            list.append("X")
+            input-=10
+        elif input >= 9:
+            list.append("IX")
+            input-=9
+        elif input >= 5:
+            list.append("V")
+            input-=5
+        elif input >= 4:
+            list.append("IV")
+            input-=4
+        elif input >= 1:
+            list.append("I")
+            input-=1
+            
+   
+bruh = int(input())
+itor(bruh)
+print(list)
+    
